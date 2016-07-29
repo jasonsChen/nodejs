@@ -1,7 +1,8 @@
 /**
  * Created by Jasons on 2016/7/28.
  */
-function start(events) {
+var fs = require('fs');
+function start(response,setResponse) {
     fs.readFile('views/index.html',function(err,data) {
         var hand = '';
         var content = '';
@@ -12,10 +13,10 @@ function start(events) {
             hand = 200;
             content = data.toString();
         }
-        events.emit('responceing',hand,content);
+        setResponse(response,hand,content);
     })
 }
-function upload() {
+function upload(response,setResponse) {
     fs.readFile('',function(err,data) {
         var hand = '';
         var content = '';
@@ -26,7 +27,7 @@ function upload() {
             hand = 200;
             content = data.toString();
         }
-        events.emit('responceing',hand,content);
+        setResponse(response,hand,content);
     })
 }
 //function  favicon() {
