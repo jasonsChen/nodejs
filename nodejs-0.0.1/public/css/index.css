@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+header {
+    -webkit-box-shadow: 0px 0px 5px 1px #acacac;
+    -moz-box-shadow: 0px 0px 5px 1px #acacac;
+    box-shadow: 0px 0px 5px 1px #acacac;
+}
+header nav.navbar {
+    margin-bottom: 10px;
+}
+@media (max-width: 769px) {
+    header nav.navbar {
+        margin-bottom: 5px;
+    }
+    .list-group {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+span {
+    display: inline-block;
+    width: 33.33%;
+}
+.content {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+

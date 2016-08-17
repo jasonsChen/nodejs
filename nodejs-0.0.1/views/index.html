@@ -1,6 +1,179 @@
-<% include head.html %>
-<h1><%= title%></h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title> <%= title %> </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
 
-
-
-<% include foot.html %>
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row clearColPad">
+                <div class="col-xs-6 col-sm-1 col-sm-offset-1">
+                    <a href="#" class="navbar-brand">brand</a>
+                </div>
+                <div class="col-sm-7 navbar-btn hidden-xs">
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default">搜索</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-2 col-xs-4 col-xs-offset-2 col-sm-offset-0 navbar-btn navbar-right">
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-default">
+                            123
+                        </button>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            123
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-header">
+                                <span class="btn">123</span><span class="btn">123</span><span class="btn">123</span>
+                            </li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="">12311111111</a></li>
+                            <li><a href="">123</a></li>
+                            <li><a href="">123</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="container-fluid">
+        <div class="row clearColPad">
+            <div class="col-sm-3 col-sm-offset-1">
+                <ul class="list-group">
+                    <li class="list-group-item">123</li>
+                    <li class="list-group-item">123</li>
+                    <li class="list-group-item">123</li>
+                    <li class="list-group-item">123</li>
+                </ul>
+            </div>
+            <div class="col-sm-7"> 
+                <div class="content clearfix">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/0.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题0</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/1.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题1</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/2.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题2</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/3.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题3</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/4.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题4</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/5.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题5</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/6.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题6</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/7.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题7</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/8.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题8</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/9.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题9</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/10.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题10</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">
+                        <div class="thumbnail">
+                            <a href="#"><img src="images/11.jpg" alt="图片"></a>
+                            <div class="caption">
+                                <h4>标题11</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<p>123<%= image %></p>
+<script src="js/javascript/index.js"></script>
+</body>
+</html>
