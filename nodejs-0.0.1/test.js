@@ -3,14 +3,15 @@ function getImages(star,nub) {
     var number = 0;
     var newDate = {};
     number = !!nub ? nub : 12;
-    fs.readFile('./models/databaseimages.jason', function (err, data) {
+    var data =fs.readFileSync('./models/databaseimages.jason');
+    //处理成所需要的data
+    (function(){
         data = JSON.parse(data);
         var imagesLen = 0;
         for (k in data["images"]) {
             imagesLen++;
         }
         star = (star== -1) ? imagesLen :star;
-        console.log(star, nub);
         if (star <= number) {
             for (var i=star-1;i>=0;i--) {
                 newDate["img"+i] = data["images"]["img"+i];
@@ -20,8 +21,8 @@ function getImages(star,nub) {
                 newDate["img"+i] = data["images"]["img"+i];
             }
         }
-        console.log(newDate)
-    });
-
+    })()
+    return newDate;
 }
-getImages(-1,12);
+
+console.log(getImages(-1,12))
