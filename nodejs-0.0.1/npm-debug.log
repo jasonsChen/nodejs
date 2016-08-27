@@ -9,7 +9,7 @@
 6 silly lifecycle nodejs-0.0.1@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle nodejs-0.0.1@0.0.0~start: nodejs-0.0.1@0.0.0
 8 verbose lifecycle nodejs-0.0.1@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle nodejs-0.0.1@0.0.0~start: PATH: C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;C:\Users\Administrator\Documents\GitHub\nodejs\nodejs-0.0.1\node_modules\.bin;C:\Program Files\nodejs;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Windows\System32;C:\Program Files\nodejs\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files (x86)\Egret\Egret Wing 3\bin
+9 verbose lifecycle nodejs-0.0.1@0.0.0~start: PATH: C:\Users\Administrator\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;C:\Users\Administrator\Documents\GitHub\nodejs\nodejs-0.0.1\node_modules\.bin;C:\Program Files\nodejs;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Windows\System32;C:\Program Files\nodejs\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files (x86)\Egret\Egret Wing 3\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;
 10 verbose lifecycle nodejs-0.0.1@0.0.0~start: CWD: C:\Users\Administrator\Documents\GitHub\nodejs\nodejs-0.0.1
 11 silly lifecycle nodejs-0.0.1@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
 12 silly lifecycle nodejs-0.0.1@0.0.0~start: Returned: code: 3221225786  signal: null
@@ -26,7 +26,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid nodejs-0.0.1@0.0.0
 16 verbose cwd C:\Users\Administrator\Documents\GitHub\nodejs\nodejs-0.0.1
-17 error Windows_NT 10.0.10586
+17 error Windows_NT 10.0.14393
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "start"
 19 error node v4.4.3
 20 error npm  v3.10.5

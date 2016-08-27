@@ -13,5 +13,7 @@
     "express": "~4.13.4",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
+    "mongoose": "4.5.9",
+    "session-mongoose": "0.5.2"
   }
 }

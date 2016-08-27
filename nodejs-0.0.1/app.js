@@ -5,10 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+// router
 var routes = require('./routes/index');
+var articles = require('./routes/article')
 var users = require('./routes/users');
+
+// mongoose
 var ejs = require('ejs');
-var fs = require('fs');
+// var SessionStore = require("session-mongoose")(express);  开启失败
 var app = express();
 
 // view engine setup
@@ -24,7 +29,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'database')));
 
+
+// router
 app.use('/', routes);
+app.use('/image',articles)
 app.use('/users', users);
 
 // catch 404 and forward to error handler

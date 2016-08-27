@@ -1,0 +1,424 @@
+
+
+<!DOCTYPE html>
+<html style="font-size:40px;">
+	<head>
+		<title>七夕放大招</title>
+		<!-- 商务版才有调用jssdk功能 线上分销测试8458545-172358 8462637-172754   4073964ty template-->
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="width=device-width, minimum-scale=0.5,maximum-scale=1, initial-scale=1, user-scalable=no" name="viewport" servergenerated="true"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="renderer" content="webkit" />
+		<!--<meta name="full-screen"content="yes">-->
+		<meta name="screen-orientation"content="portrait">
+		<!--<meta name="x5-fullscreen"content="true">-->
+		<meta name="x5-orientation"content="portrait">
+		<meta name="format-detection" content="telephone=no" />
+
+		<meta name="keywords" content="HTML5,凡科, H5 制作工具,微传单,微场景,邀请函,微海报" />
+		<meta name="description" content="我不信！浪漫七夕套餐5折限量抢">
+
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="七夕放大招"/>
+		<meta property="og:description" content="我不信！浪漫七夕套餐5折限量抢"/>
+		<meta property="og:image" content="http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ!450x450.jpg"/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="七夕放大招" />
+		<meta name="twitter:description" content="我不信！浪漫七夕套餐5折限量抢" />
+		<meta name="twitter:image" content="http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ!450x450.jpg" />
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://cd.faisys.com/image/favIcon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="http://cd.faisys.com/image/favIcon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="http://cd.faisys.com/image/favIcon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="http://cd.faisys.com/image/favIcon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="http://cd.faisys.com/image/favIcon/favicon-16x16.png" sizes="16x16">
+		<link rel="mask-icon" href="http://cd.faisys.com/image/favIcon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="http://cd.faisys.com/image/favIcon/mstile-144x144.png">
+		<meta name="theme-color" content="#00ffff">
+	
+		
+		<link href="http://cd.faisys.com/css/flyerComm.min.css?v=201608231728" rel="stylesheet" type="text/css" />
+		<link href="http://cd.faisys.com/css/flyer/flyerMobi.min.css?v=201608232060" rel="stylesheet" type="text/css" />
+		<link href="http://cd.faisys.com/css/comm/plugins/swiper.min.css?v=201607041730" rel="stylesheet" type="text/css" />
+		<link href="http://cd.faisys.com/css/flyerAnimation.min.css?v=201608221724" rel="stylesheet" type="text/css" />
+		
+		<script>
+		  var oClientWidth = document.documentElement.clientWidth;
+		</script>
+
+		<script type='text/javascript'>
+			var browserVersion = navigator.userAgent.toLowerCase();
+
+			var w_s_width = window.screen.width ;
+			var w_s_height = window.screen.height ;
+
+			/*
+			坑，在PC上模拟的移动浏览器上面，不能用innerWidth 这样每次刷新获取到innerWidth 不一样
+			但是在mobile端要用innerHeight才不至于将浏览器工具栏计算进去。
+			*/
+			if( browserVersion.indexOf('ucbrowser') >= 0 ||
+				browserVersion.indexOf('qqbrowser') >= 0 || 
+				browserVersion.indexOf('micromessenger') >= 0  ){
+				w_s_width = window.innerWidth ;
+				w_s_height = window.innerHeight;
+			}
+
+			//坑，这里有一个问题是低版本的chrome内核微信上面不能用innerSize来计算
+			//只能用screenSize减去浏览器头部的值
+			//头部的值默认取73，当然不同的手机不同的浏览器上面这个值不同，这里可能会是以后需要常修改的地方 lyq
+			if( browserVersion.indexOf('android') >= 0 ){
+				var cvIdx = browserVersion.indexOf('chrome/');
+				var cVersion = parseInt(browserVersion.substring(cvIdx+7,cvIdx+9)) || 0;
+				//浏览器头部高度，暂时没有发现非73高度的浏览器，后期如果需要更改可以根据浏览器的版本确定该高度的值 lyq
+				var browserHeaderHeight = 73;
+				if(cVersion > 0 && cVersion < 34){
+					w_s_width = window.screen.width;
+					w_s_height = window.screen.height - browserHeaderHeight ;
+				}
+			}
+
+			var w_o_width = 750,w_o_height = 1206;
+
+			var opercent = w_o_width / w_o_height;
+			var wpercent = w_s_width / w_s_height;
+
+			var w_scale = (w_s_width / w_o_width).toFixed(4);
+			var h_scale = (w_s_height / w_o_height).toFixed(4);
+
+			var i_scale = (opercent > wpercent) ? w_scale : h_scale;
+			var viewport = document.querySelector("meta[name=viewport]");
+				viewport.setAttribute('content', 'width=device-width, minimum-scale='+i_scale+',maximum-scale='+i_scale+', initial-scale='+i_scale+', user-scalable=no');
+
+			window.requestAnimationFrame = (function(){
+		      return  window.requestAnimationFrame       || 
+		              window.webkitRequestAnimationFrame || 
+		              window.mozRequestAnimationFrame    || 
+		              window.oRequestAnimationFrame      || 
+		              window.msRequestAnimationFrame	 ||
+			          function( callback ){
+			            window.setTimeout(callback, 1000 / 60);
+			        };
+		    })();
+		    
+		    window.cancelAnimationFrame = (function(){
+		      return  window.cancelAnimationFrame       || 
+		              window.webkitCancelAnimationFrame || 
+		              window.mozCancelAnimationFrame    || 
+		              window.oCancelAnimationFrame      || 
+		              window.msCancelAnimationFrame     ||
+		              function(id) {
+				        window.clearTimeout(id);
+				      };
+		    })();
+
+		</script>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body style="position:relative;">
+		<!--微信分享  300×300-->
+		<!-- <div style="display:none;"><img src="/imageWX.jsp?flyerAid=1083781&imageId=ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ&flyerId=103"></div> -->
+		<div class="loadingPage" id="loadingPage">
+			<div id="loading" class="loading" style="display:none;">
+				<div class="loadingTip ooc" data-css="wh">
+					<div id="loadingScale" class="loadingScale">
+						<div class="f_loading" style="height:100%;width:100%;overflow:hidden;">
+						    <div class="load_b" style="height:100%;width:100%;border-radius:50%;"></div>
+						    <div class="load_r" style="height:100%;width:100%;border-radius:50%;"></div>
+						    <div class="load_g" style="height:100%;width:100%;border-radius:50%;"></div>
+						    <div class="load_y" style="height:100%;width:100%;border-radius:50%;"></div>
+						</div>
+						<div class="load_mask ooc" data-css="whtl"></div>
+					</div>
+
+					<div id="loadingWaves" class="loadingWaves ooc" data-css="whm">
+						<img id="loadingImg" class="loadingImg ooc" data-css="whm"/>
+						<div class="bgOne ooc" data-css="wh">
+							<canvas id="canvas" width="260" height="260" class="ooc" data-css="lt">浏览器不支持canvas</canvas>
+						</div>
+						<div class="loadingMask ooc" data-css="whlt"></div>
+					</div>
+				</div>
+				
+				<div class="faiscoSite ooc" data-css="b">
+						<a id="faiscoSiteA" class="ooc" style="color: rgba(0,0,0,.3);" href="" data-css="phifo" onclick="Flyer.logDog(2000045,0);">凡科微传单</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="mobiPage" class="mobiPage">
+
+			
+
+
+
+
+
+
+
+
+
+<div id="pageContent" class="page_content swiper-container">
+
+
+	
+			<div class="f_music">
+		        <div id="pageMusic" data-open="true" data-src="http://cd.faisys.com/image/musicLib/defaultMusic/0000007.mp3" data-auto="true" data-loop="true"></div>
+
+		        
+		        <div class="musicDiv">
+			        <div class="musicIcon " id="musicIcon" style="display:block" data-css="whtr">
+			            <div class="" data-css="whm"></div>
+			        </div>
+		        </div>
+		    </div>
+
+	<div class="swiper-wrapper">
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+		<div class="fMain_content swiper-slide" style="">
+			<div class="swiper-slide-special-animate pageContentPanel"></div>
+		</div>
+
+	</div>
+	<div id="flyer_page_bar" class="swiper-pagination"></div>
+</div>
+		</div>
+		<div id="productDetailLinkPanel" class="productDetailLinkPanel" style="display:none;">
+			<div id="ajaxLoading" class="loadingPage_One ooc" data-css="whp">
+			    <div class="_ballOne ooc" data-css="wh"></div>
+			    <div class="_ballTwo ooc" data-css="wh"></div>
+			    <div class="_ballThree ooc" data-css="wh"></div>
+			</div>
+			<div class="productMarkClose"></div>
+		</div>
+		<div id="rotateTipsPanel" class="rotateTipsPanel" style="display:none;">
+		</div>
+	</body>
+
+<script type='text/javascript' src="http://cd.faisys.com/js/comm/jquery/jquery-core.min.js?v=201606131637"></script>
+<script type='text/javascript' src="http://cd.faisys.com/js/comm/swiper.min.js?v=201606271727"></script>
+
+<script type="text/javascript">
+
+	if(typeof Flyer == 'undefined'){
+	    Flyer = {};
+	    if(!1){
+	    	Flyer.top = window;
+	    }else{
+	    	Flyer.top = top;
+	    }
+	}
+	Flyer.pageLogoImgSrc = "http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ!450x450.jpg";
+	Flyer.top._isPreview = false;
+	//判断是否来自PC，是否调用箭头滑动的方法。
+	Flyer.top._isFromPC = /Android|webOS|iPhone|iPad|iPod|BlackBerry|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(							  navigator.userAgent)? false: true;
+	Flyer._aid = 1083781;
+	Flyer._faiscoAid = 9868209;
+	Flyer._isStatUV = "null";
+	Flyer._fid = 103;
+	Flyer._identifier = "112c5Z37";
+	Flyer.top._showLoading = 1;
+	
+	Flyer._flyerOtherSetting = {"pagepic":"ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ","title":"七夕放大招","dec":"我不信！浪漫七夕套餐5折限量抢","technical":true,"pageeffect":0,"foreground":"#000000","background":0,"qrCodePic":"ADIIABACGAAgqpiVvQUosOvczwIw3wQ43gQ"};
+	Flyer._flyerOtherBulletParam = {"autoplay":true,"loop":true,"showbulletswitch":true,"sendbullet":true,"wxheadimg":true,"tips":""};
+	Flyer._flyerOtherOperatorParam = {"textType_a":0,"textType_b":0,"text_a":"","text_b":""};
+
+	Flyer._flyerVersion = 0; //传单版本 0 免费版 1 商务版 ，分销 110 试用 120 高级
+	Flyer._isLowVersion = true;//低级版本
+	Flyer._tmpContentImageList = [["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAg1oWVvQUovtOwuwYwgAU48Ac.jpg"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAg3aSVvQUo6MSQvwIwgAU48Ac.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAg2aGVvQUohJ-HkwcwgAU48Ac.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAggKKVvQUo5M2QiwYwgAU48Ac.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAgzaKVvQUoqpKKpAEwgAU48Ac.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAg4qKVvQUo2JKQhAQwgAU48Ac.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"],["http://cd.faisys.com/image/manage/noImg1.jpg","http://1083781.s50i-1.faiusr.com/2/103/ADIIABACGAAg9KKVvQUowdSCODCABTjwBw.jpg","http://1083781.s50i-1.faiusr.com/4/103/ADIIABAEGAAgwZKVvQUosq6GmwQwnwQ4hwE!450x450.png"]];
+	Flyer._pageEffect = 0;
+	Flyer._webDebug = false;
+
+	Flyer._faiscoSite = ("ontouchstart" in window) ? "http://mp.weixin.qq.com/s?__biz=MzI1ODA3MjQyNw==&mid=400735216&idx=1&sn=c20ee06dc94b2b5f61133ac97302e708&scene=20#wechat_redirect" : "http://wcd.im";
+	Flyer._faiscoSiteText = "点击制作凡科微传单";
+	Flyer.top._isUIManage = false;
+	Flyer.top._isOperateManage = false;
+	Flyer.top._isOem = false;
+	Flyer._resRoot = "http://cd.faisys.com";
+	//不用考虑分享人=访问人的情况使用
+	Flyer._userInfo_not = {};
+	Flyer._userInfo = {};
+	Flyer._shareUserInfo = {};
+	Flyer._shareLevel = 0;
+	//比较分享人和访问人用
+	Flyer._flyerWXUserId = {userId:0,shareUserId:0};
+	Flyer._slv = 0;
+	Flyer._fromType = "null";
+
+	Flyer._slideBar = {
+		flyerSlideLoop:false,
+		flyerSlideBar:false,
+		flyerSlideBarColor:"#548cd4",
+		flyerSlideIdx:false
+	}
+	Flyer.wx_openId = "";
+	
+	if(Flyer.top._isOem){
+		Flyer._faiscoSite = "http://mp.weixin.qq.com/s?__biz=MzI1ODA3MjQyNw==&mid=400735216&idx=1&sn=c20ee06dc94b2b5f61133ac97302e708&scene=20#wechat_redirect";
+	}
+
+	Flyer._openCommercial = Flyer._flyerOtherSetting.technical || Flyer._isLowVersion;
+	Flyer.lazyJSPath = {
+		"iscroll" : "http://cd.faisys.com/js/comm/scroll5Lite.min.js?v=201606131637"	
+	};
+	Flyer.hasLoadedJs = {};
+</script>
+<script type='text/javascript' src="http://cd.faisys.com/js/flyer.min.js?v=201608241141" ></script>
+
+<script type="text/javascript">
+	var _faiAjax = function(){
+		//for regexp
+		var r = /\?/;
+		var _o = {
+			type:"get",
+			url:"",
+			data:"",
+			error:function(){},
+			success:function(){}
+		};
+		var _sendRequest=function(o) {
+			var xmlhttp = null;
+			//init option code
+			o.type = o.type || _o.type;
+			o.url = o.url || _o.url;
+			o.data = o.data || _o.data;
+			o.error = o.error || _o.error;
+			o.success = o.success || _o.success;
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp = new XMLHttpRequest();
+			}else{
+				return;
+			}
+			//the instructions param takes the form of an eval statement
+			if(o.type != "post") {
+				o.url += ( this.r.test( o.url ) ? "&" : "?" ) + o.data;
+				xmlhttp.open("GET", o.url, true);
+					xmlhttp.onreadystatechange=function() {
+					if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+						o.success( xmlhttp.responseText );
+					}else if( o.error ){
+						o.error();
+					}
+				}
+				xmlhttp.send();
+			} else {
+				xmlhttp.open("POST", o.url, true);
+				//Send the proper header information along with the request
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+				xmlhttp.onreadystatechange=function() {
+					if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+						o.success( xmlhttp.responseText );
+					}else{
+						o.error();
+					}
+				}
+				xmlhttp.send(o.data);
+			}
+		}
+		return {
+			ajax:function(option){
+				try {
+					//此次调用的错误不让抛出给window。防止函数重入
+					_sendRequest(option);	
+				}catch(e){
+					//alert(e);
+				}
+			}
+		};
+	}();
+	var _jsErrCahche = [];
+	window.onerror = function(sMsg,sUrl,sLine){
+		if( sLine < 1 || typeof sMsg != 'string' || sMsg.length < 1 ){
+			return;
+		}
+		if(/WeixinJSBridge|_WXJS/.test(sMsg)){
+			return;
+		}
+		
+		var log = "Error:" + sMsg + ";Line:" + sLine + ";Url:" + sUrl + ";UserAgent:" + navigator.userAgent;
+		var alertLog = "Error:"+sMsg+"\n" + "Line:" + sLine + "\n" + "Url:" + sUrl + "\n";
+		var encodeUrl = function (url){
+			return typeof url === "undefined" ? "" : encodeURIComponent(url);
+		};
+		
+		var ajax = true;
+		var obj = { 'm' : sMsg, 'u' : sUrl, 'l' : sLine };
+		for( var i = 0; i < _jsErrCahche.length; i ++ ){
+			if( _jsErrCahche[i].m == obj.m && _jsErrCahche[i].u == obj.u && _jsErrCahche[i].l == obj.l  ){
+				ajax = false;
+				break;
+			}
+		}
+		
+		if( ajax ){
+			_jsErrCahche.push( obj );
+			_faiAjax.ajax({
+				type	: "post",
+				url		: "ajax/logJsErr_h.jsp?cmd=jsErr",
+				data	: 'msg='+ encodeUrl(log)
+			});
+		}
+		if(false){
+			console.log( alertLog );
+		}
+	};
+
+	
+	
+			if(Flyer.isWeiXin()){
+				Flyer.logDog(2000022,1);
+			}else{
+				Flyer.logDog(2000022,2);
+			}
+		
+	
+	/*if($('#faiscoSite').length > 0 && !Flyer.top._isPreview){
+		$('#faiscoSite').bind('click',function(){
+			Flyer.logDog(2000024,0);
+		});
+	}*/
+	Flyer.report();
+</script>
+</html>
+
+
